@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
 
+
 :root{
     --naranja: #FC7300;
     --verdeAgua: #1F8A70;
@@ -9,14 +10,14 @@
 }
 
 *{
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background: radial-gradient(var(--blanco), 85%, var(--verdeAgua));
     color: var(--negro);
 }
 h1, h2, h3{
-    font-family: Belanosima;
+    font-family: 'Belanosima', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 .section-padding{
@@ -118,16 +119,26 @@ h2{
     justify-content: center;
     display: flex;
 }
+.mensaje{
+    display: inline-block;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 10px;
+    background: var(--naranja);
+}
 .mensaje:hover{
     text-transform: uppercase;
-    color: var(--naranja);
+    color: var(--blanco);
+}
+.noPadding p{
+    margin-bottom: 4px;
 }
 
 /*Formulario*/
 
 .formulario{
     width: 70%;
-    margin-top: 8%;
+    margin-top: 80px;
     margin-bottom: 4%;
     border-radius: 10px;
     background: var(--verdeAgua);
@@ -197,5 +208,13 @@ h2{
     .footer{
         max-height: 380px;
         text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .section-padding{
+        padding: 40px 20px;
+    }
+    .footer{
+        max-height: 420px;
     }
 }
