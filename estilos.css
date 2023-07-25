@@ -209,6 +209,14 @@ h2{
         max-height: 380px;
         text-align: center;
     }
+    .responsiveQuienes {
+        display: flex;
+        flex-flow: wrap-reverse
+      }
+      .mapouter{
+        margin: auto;
+    }
+    
 }
 @media only screen and (max-width: 600px) {
     .section-padding{
@@ -216,5 +224,12 @@ h2{
     }
     .footer{
         max-height: 420px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .sociales{
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 0.5rem;
     }
 }
